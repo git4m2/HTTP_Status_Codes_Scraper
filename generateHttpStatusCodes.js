@@ -34,9 +34,14 @@ rp(url)
         response: statusResponse
       };
       arrayStatusCodes.push(responseCodeData);
+
+      let txtResponse = statusResponse.toUpperCase();
+      txtResponse = txtResponse.replace(/-/g, "_"); // global replacement
+      txtResponse = txtResponse.replace(/ /g, "_"); // global replacement
+      console.log("this." + txtResponse + " = " + statusCode + ";");
     }
 
-    console.log(arrayStatusCodes);
+    // console.log(arrayStatusCodes);
   })
   .catch(function(err){
     //handle error

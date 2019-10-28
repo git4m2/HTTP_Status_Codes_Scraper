@@ -51,3 +51,13 @@ The results after running the command above are as follows:</br>
   { code: '200', response: 'OK' }, ...</br>
 ]
 </div>
+
+#### v3.0 - Create enumerated list for class module.
+The results after running the command above are as follows:</br>
+<div style="color:limegreen";>
+this.CONTINUE = 100;</br>
+this.SWITCHING_PROTOCOL = 101;</br>
+this.PROCESSING = 102;</br>
+this.EARLY_HINTS = 103;</br>
+this.OK = 200; ...</br>
+</div>
