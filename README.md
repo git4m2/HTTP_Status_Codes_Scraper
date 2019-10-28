@@ -61,3 +61,18 @@ this.PROCESSING = 102;</br>
 this.EARLY_HINTS = 103;</br>
 this.OK = 200; ...</br>
 </div>
+
+#### v4.0 - Add class module file to current project.
+
+Note:</br>
+To reference the file '*scripts/httpStatusCodes.js*' in your project 
+you must add the following lines to a javascript file within your project:
+
+* import { httpStatusCodes } from "./httpStatusCodes.js";</br>
+* const HttpStatus = new httpStatusCodes;</br>
+
+To use the enumerated list of status codes, simply type the constant and select a code from the list. 
+
+Examples...
+* HttpStatus.OK
+* HttpStatus.UNAUTHORIZED
