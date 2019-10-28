@@ -36,6 +36,18 @@ In a terminal window, type:</br>
 <strong>node generateHttpStatusCodes.js</strong>
 
 ### Version
-v1.0 - HTTP Status Codes Scraper.</br>
+#### v1.0 - HTTP Status Codes Scraper.</br>
 The results after running the command above are as follows:
 <div style="color:limegreen";>100 Continue</div>
+
+#### v2.0 - Create aray of status codes.</br>
+The results after running the command above are as follows:</br>
+<div style="color:limegreen";>
+[</br>
+  { code: '100', response: 'Continue' },</br>
+  { code: '101', response: 'Switching Protocol' },</br>
+  { code: '102', response: 'Processing' },</br>
+  { code: '103', response: 'Early Hints' },</br>
+  { code: '200', response: 'OK' }, ...</br>
+]
+</div>

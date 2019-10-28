@@ -1,6 +1,6 @@
 {
   "name": "generatehttpstatuscodes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Web Scrape HTTP Status Codes from the Mozilla reference.",
   "main": "generateHttpStatusCodes.js",
   "dependencies": {

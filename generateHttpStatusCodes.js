@@ -24,10 +24,19 @@ rp(url)
     //success!
     let statusCodes = $('dt > a > code', html);
 
-    // let objData = statusCodes[0].childNodes[0].nodeValue;
-    let objData = statusCodes[0].firstChild.nodeValue;
+    const arrayStatusCodes = [];
+    for (let i=0; i < statusCodes.length; i++) {
+      let objData = statusCodes[i].firstChild.nodeValue;
+      let statusCode = objData.split(" ")[0];
+      let statusResponse = objData.slice(statusCode.length).trimLeft();
+      let responseCodeData = {
+        code: statusCode,
+        response: statusResponse
+      };
+      arrayStatusCodes.push(responseCodeData);
+    }
 
-    console.log(objData);
+    console.log(arrayStatusCodes);
   })
   .catch(function(err){
     //handle error
