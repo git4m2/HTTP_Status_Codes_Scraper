@@ -76,3 +76,8 @@ To use the enumerated list of status codes, simply type the constant and select 
 Examples...
 * HttpStatus.OK
 * HttpStatus.UNAUTHORIZED
+
+#### v5.0 - Resolve dependency vulnerabilities.
+
+As Administrator, run: 
+<div style="color:aqua";>npm audit fix</div>
